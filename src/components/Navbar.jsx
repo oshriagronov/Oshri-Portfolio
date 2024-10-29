@@ -4,7 +4,7 @@ const Navbar = () => {
     <nav className="bg-emerald-100 ">
       <div className="mx-auto max-w-7xl px-8 py-4 flex flex-col sm:flex-row sm:gap-x-16 sm:item-center sm:py-8">
         <h2 className="text-3xl font-bold">
-          Web<span className="text-emerald-500">Dev</span>
+          Software<span className="text-emerald-500">Dev</span>
         </h2>
         <div className="flex items-center gap-x-3">
           {links.map((link) => {

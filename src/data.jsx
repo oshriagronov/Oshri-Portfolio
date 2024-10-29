@@ -1,5 +1,12 @@
 import { nanoid } from "nanoid";
-import { FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaJs,
+  FaReact,
+  FaPython,
+  FaJava,
+  FaDatabase,
+} from "react-icons/fa";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
@@ -13,18 +20,36 @@ export const skills = [
     id: nanoid(),
     title: "HTML&CSS",
     icon: <FaHtml5 className="h-16 w-16 text-emerald-500" />,
-    text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
+    text: "My Udemy training in HTML and CSS taught me to build clean, accessible, and visually appealing web pages..",
   },
   {
     id: nanoid(),
     title: "Javascript",
     icon: <FaJs className="h-16 w-16 text-emerald-500" />,
-    text: "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality",
+    text: "I gained a strong grasp of JavaScript through Udemy courses, using it to create interactive, responsive applications.",
   },
   {
     id: nanoid(),
     title: "React",
     icon: <FaReact className="h-16 w-16 text-emerald-500" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+    text: "Through Udemy courses, I built a solid foundation in React, creating modular applications with dynamic features.",
+  },
+  {
+    id: nanoid(),
+    title: "Python",
+    icon: <FaPython className="h-16 w-16 text-emerald-500" />,
+    text: "I’ve built a solid foundation in Python through my college coursework, gaining experience in writing programs with good algorithms and data structures.",
+  },
+  {
+    id: nanoid(),
+    title: "Java",
+    icon: <FaJava className="h-16 w-16 text-emerald-500" />,
+    text: "I have developed a strong foundation in Java through CampusIL coursework and practical projects, where I gained experience building small-scale games.",
+  },
+  {
+    id: nanoid(),
+    title: "DataBases",
+    icon: <FaDatabase className="h-16 w-16 text-emerald-500" />,
+    text: "I have experience working with MongoDB and PostgreSQL. My goal is to keep data organized and easy to access, making it a joy for developers like me to work with.",
   },
 ];

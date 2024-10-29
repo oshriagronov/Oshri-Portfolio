@@ -1,5 +1,6 @@
 import heroImg from "../assets/hero.svg";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 const Hero = () => {
   return (
     <section className="bg-emerald-100 py-24 sm:flex justify-around">
@@ -22,7 +23,7 @@ const Hero = () => {
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
             <a href="https://x.com/OshriAgronov">
-              <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+              <FaSquareXTwitter className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
           </div>
         </article>

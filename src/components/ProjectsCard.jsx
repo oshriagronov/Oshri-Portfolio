@@ -11,12 +11,24 @@ const ProjectsCard = ({ url, imageSrc, github, title, text }) => {
       <div className="capitalize p-8">
         <h2 className="text-xl tracking-wide font-medium">{title}</h2>
         <p className="mt-4 text-slate-700 leading-loose">{text}</p>
-        <div className="mt-4 flex gap-x-4">
+        <div className="mt-4 flex">
           <a href={url}>
-            <TbWorldWww className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <TbWorldWww
+              className={
+                url
+                  ? "h-8 w-8 mr-2 text-slate-500 hover:text-black duration-300"
+                  : "hidden"
+              }
+            />
           </a>
           <a href={github}>
-            <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <FaGithubSquare
+              className={
+                github
+                  ? "h-8 w-8 mr-2 text-slate-500 hover:text-black duration-300"
+                  : "hidden"
+              }
+            />
           </a>
         </div>
       </div>
