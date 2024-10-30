@@ -5,4 +5,21 @@
   .align-element {
     @apply mx-auto max-w-7xl px-8;
   }
+  .background {
+    @apply bg-gray-50;
+  }
+
+  .highlight {
+    @apply text-blue-500;
+  }
+  .text {
+    @apply text-gray-700;
+  }
+  .sub-text {
+    @apply text-gray-500;
+  }
+
+  .accent {
+    @apply bg-blue-300;
+  }
 }

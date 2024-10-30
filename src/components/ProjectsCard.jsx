@@ -9,14 +9,14 @@ const ProjectsCard = ({ url, imageSrc, github, title, text }) => {
         className="w-full object-cover rounded-t-lg h-64 "
       />
       <div className="capitalize p-8">
-        <h2 className="text-xl tracking-wide font-medium">{title}</h2>
-        <p className="mt-4 text-slate-700 leading-loose">{text}</p>
+        <h2 className="text text-xl tracking-wide font-medium">{title}</h2>
+        <p className="mt-4 sub-text leading-loose">{text}</p>
         <div className="mt-4 flex">
           <a href={url}>
             <TbWorldWww
               className={
                 url
-                  ? "h-8 w-8 mr-2 text-slate-500 hover:text-black duration-300"
+                  ? "h-8 w-8 mr-2 sub-text hover:text-black duration-300"
                   : "hidden"
               }
             />
@@ -25,7 +25,7 @@ const ProjectsCard = ({ url, imageSrc, github, title, text }) => {
             <FaGithubSquare
               className={
                 github
-                  ? "h-8 w-8 mr-2 text-slate-500 hover:text-black duration-300"
+                  ? "h-8 w-8 mr-2 sub-text hover:text-black duration-300"
                   : "hidden"
               }
             />
