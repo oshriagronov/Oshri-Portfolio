@@ -27,6 +27,7 @@ The design of the site utilizes Tailwind CSS.
 - Html&Css ,JavaScript.
 - React - Hooks.
 - Headless CMS(Contentful).
+- TailwindCSS.
 
 ## Setup
 

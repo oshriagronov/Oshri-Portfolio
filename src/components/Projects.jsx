@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 import useFetchProjects from "./fetchProjects";
 const Projects = () => {
   const { isLoading, projects } = useFetchProjects();
-  if (isLoading) return <h1>Loading...</h1>;
+  if (isLoading) return <div className="loading"></div>;
   return (
     <section className="py-20 align-element" id="projects">
       <SectionTitle title="Projects" />
