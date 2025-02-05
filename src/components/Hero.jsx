@@ -16,13 +16,13 @@ const Hero = () => {
             Software is cool I guess.
           </p>
           <div className="flex gap-x-4 mt-4">
-            <a href="https://github.com/oshriv65">
+            <a href="https://github.com/oshriagronov">
               <FaGithubSquare className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
             <a href="https://www.linkedin.com/in/oshri-agronov/">
               <FaLinkedin className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
-            <a href="https://x.com/OshriAgronov">
+            <a href="https://x.com/oshriagronov">
               <FaSquareXTwitter className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
           </div>
