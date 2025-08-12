@@ -1,48 +1,65 @@
-# Portfolio
+<br />
+<div align="center">
+  <a href="https://github.com/oshriagronov/oshri-portfolio">
+    <img src="public/logo.png" alt="Logo" width="200" height="200">
+  </a>
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-<br>
-This project was created as a milestone task to demonstrate my proficiency in React and showcase my work. It serves as a portfolio, allowing me to highlight my skills and experience in web development.
+<h3 align="center">Portfolio</h3>
+  <p align="center">
+    This project was created as a milestone task to demonstrate my proficiency in React and showcase my work.
+  </p>
+</div>
 
-## Table of contents
-
-- [General info](#general-info)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Acknowledgements](#acknowledgements)
-
-## General info
+## About
 
 This project showcases my ability to build a robust and scalable portfolio site using React, a popular JavaScript library for building user interfaces. The site fetches data from a headless CMS.
 The design of the site utilizes Tailwind CSS.
 
-## Technologies
+## Technologies used
 
-- Html&Css ,JavaScript.
+- js, html & css.
 - React - Hooks.
-- Headless CMS(Contentful).
 - TailwindCSS.
 
-## Setup
+## Tools Utilized
+- Headless CMS(Contentful.
 
-To run Portfolio, ensure that you have Node.js and npm (the package manager for JavaScript) installed on your system. You can download the latest version of Node.js from the official [Node.js website](https://nodejs.org/en/download/).
-Once Node.js is installed, open a terminal or command prompt and navigate to the directory where you want to install the project.
+## Getting Started
 
-Install the required dependencies by running:
+To get a local copy up and running follow these simple steps.
 
-```bash
-npm install
-```
+### Prerequisites
 
-### How to start?
+- Linux, MacOS or Windows
+- nodejs
+- npm
+- vite
 
-To get started, navigate to your terminal and run `npm install` to fetch all required dependencies. Once installed, execute `npm run dev` in the project directory. This will trigger the development server, allowing you to access the site at [http://localhost:5173](http://localhost:5173/). Open this URL in your browser to view the portfolio in action.
+### Installation
+
+---
+
+1. **Clone and enter the oshri-portfolio repository:**
+
+   ```bash
+   git clone https://github.com/oshriagronov/oshri-portfolio && cd oshri-portfolio
+   ```
+
+2. **Install npm modules::**
+
+   ```bash
+   sudo npm i
+   ```
+
+3. **Run in dev mode:**  
+   ```bash
+   sudo npm run dev
+   ```
+
+4. **Go to the site:**
+<br/> [http://localhost:5173](http://localhost:5173/)
+
+> I used Contentful as a headless CMS for the project’s assets. You can use anything you like, but you should create a .env file and enter the relevant information to access the assets.
 
 ## Acknowledgements
 
