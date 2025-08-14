@@ -22,7 +22,7 @@ The design of the site utilizes Tailwind CSS.
 - TailwindCSS.
 
 ## Tools Utilized
-- Headless CMS(Contentful.
+- Headless CMS(Contentful).
 
 ## Getting Started
 
