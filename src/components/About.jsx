@@ -16,7 +16,7 @@ const About = () => {
             enthusiast and aspiring developer. In my free time, I enjoy working
             on new projects and continuously learning through courses and
             self-study to expand my skill set.<br></br> Currently pursuing a BSc
-            in Software Engineering(second year), I’m seeking an internship
+            in Software Engineering, I’m seeking an internship
             where I can grow as a developer and contribute to innovative
             projects.
           </p>
