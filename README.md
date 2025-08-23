@@ -66,3 +66,6 @@ To get a local copy up and running follow these simple steps.
 I would like to thank John Smilga for creating the great course "Complete React, Next.js & TypeScript Projects Course 2024"
 
 > Link to the course [here](https://www.udemy.com/course/react-tutorial-and-projects-course/?couponCode=KEEPLEARNING)
+
+I would like to thank Neta Dror for the heavy inspiration for my portfolio, I really depended on her portfolio site.
+> link to her [linkedin](https://www.linkedin.com/in/netadror/)
