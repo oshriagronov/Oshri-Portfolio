@@ -1,17 +1,17 @@
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
 const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
   return (
-    <article className="grid md:grid-cols-2 gap-12 items-stretch">
+    <article className="grid md:grid-cols-2 gap-12 items-stretch rounded-2xl shadow-md hover:shadow-xl duration-300">
       <img
         src={imageSrc}
         alt={title}
-        className="rounded-2xl overflow-hidden border-transparent h-full flex items-center"
+        className="rounded-2xl overflow-hidden h-full flex items-center"
       />
       <div className="flex flex-col justify-center">
         <div className="flex flex-wrap gap-2 mb-4">
         {stack?.map((item) => {
-          return <span className="px-4 py-1.5 bg-gray-100 text-gray-600 text-sm rounded-full">{item}</span>
+          return <span className="px-4 py-1.5 bg-gray-100 shadow-md text-gray-600 text-sm rounded-full">{item}</span>
         })}
         </div>
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
@@ -27,7 +27,7 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
             />
           </a>
           <a href={github}>
-            <FaGithubSquare
+            <FaGithub
               className={
                 github
                   ? "h-8 w-8 mr-2 sub-text hover:text-black duration-300"

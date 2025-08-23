@@ -8,7 +8,7 @@ const Hero = () => {
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 tracking-tight">
           Hi
             <span class="inline-block hover:animate-wave cursor-default ml-4">👋</span>
-            , I'm Oshri and I'm software enthusiast.
+            , I'm Oshri and I'm a software enthusiast.
           </h1>
           <h2 className="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0 ">
             I’m a passionate developer who loves turning ideas into real products.<br/>
@@ -23,11 +23,13 @@ const Hero = () => {
           />
         </article>
         <div className="absolute bottom-4 md:bottom-8 sm:bottom-16 left-1/2">
-          <img
-            src={arrowDown}
-            alt="arrow pointing down"
-            className="h-8 w-8"
-          />
+          <a href="#projects" className="flex items-center duration-300 hover:scale-110 hover:-translate-y-1">
+            <img
+              src={arrowDown}
+              alt="arrow pointing down"
+              className="h-8 w-8"
+            />
+          </a>
         </div>
       </div>
     </section>

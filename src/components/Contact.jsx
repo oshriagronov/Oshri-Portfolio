@@ -1,5 +1,4 @@
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaLinkedin, FaGithub } from "react-icons/fa6";
 const Contact = () => {
     return (
         <section className="py-20 md:py-20 scroll-mt-24" id="contact">
@@ -13,13 +12,13 @@ const Contact = () => {
             </div>
             <div className="flex justify-center gap-8 mt-4">
             <a href="https://github.com/oshriagronov">
-              <FaGithubSquare className="h-8 w-8 sub-text hover:text-black duration-300" />
+              <FaGithub className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
             <a href="https://www.linkedin.com/in/oshri-agronov/">
               <FaLinkedin className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
             <a href="https://x.com/oshriagronov">
-              <FaSquareXTwitter className="h-8 w-8 sub-text hover:text-black duration-300" />
+              <FaXTwitter className="h-8 w-8 sub-text hover:text-black duration-300" />
             </a>
             </div>
         </div>
