@@ -1,16 +1,21 @@
 import { FaGithubSquare } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
-const ProjectsCard = ({ url, imageSrc, github, title, text }) => {
+const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
   return (
-    <article className="bg-white rounded-lg shadow-md block hover:shadow-xl duration-300">
+    <article className="grid md:grid-cols-2 gap-12 items-stretch">
       <img
         src={imageSrc}
         alt={title}
-        className="w-full object-cover rounded-t-lg h-64 "
+        className="rounded-2xl overflow-hidden border-transparent h-full flex items-center"
       />
-      <div className="capitalize p-8">
-        <h2 className="text text-xl tracking-wide font-medium">{title}</h2>
-        <p className="mt-4 sub-text leading-loose">{text}</p>
+      <div className="flex flex-col justify-center">
+        <div className="flex flex-wrap gap-2 mb-4">
+        {stack?.map((item) => {
+          return <span className="px-4 py-1.5 bg-gray-100 text-gray-600 text-sm rounded-full">{item}</span>
+        })}
+        </div>
+        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">{text}</p>
         <div className="mt-4 flex">
           <a href={url}>
             <TbWorldWww

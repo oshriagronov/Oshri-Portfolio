@@ -1,17 +1,17 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Skills from "./components/Skills";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 const App = () => {
   return (
-    <main>
+    <main className="background">
       <section>
         <Navbar />
         <Hero />
-        <Skills />
-        <About />
         <Projects />
+        <About />
+        <Contact />
       </section>
     </main>
   );

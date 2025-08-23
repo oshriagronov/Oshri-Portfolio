@@ -6,11 +6,11 @@
     @apply mx-auto max-w-7xl px-8;
   }
   .background {
-    @apply bg-gray-50;
+    @apply bg-white;
   }
 
   .highlight {
-    @apply text-blue-500;
+    @apply text-gray-500;
   }
   .text {
     @apply text-gray-700;

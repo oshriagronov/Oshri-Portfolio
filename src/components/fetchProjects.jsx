@@ -15,10 +15,10 @@ const useFetchProjects = () => {
         content_type: "oshriPortfolio",
       });
       const projects = response?.items.map((item) => {
-        const { title, text, img, url, github } = item.fields;
+        const { title, text, img, url, github, stack } = item.fields;
         const id = img?.sys?.id;
         const imageSrc = img?.fields?.file?.url;
-        return { title, url, id, imageSrc, text, github };
+        return { title, url, id, imageSrc, text, github, stack };
       });
       setProjects(projects);
       setIsLoading(false);

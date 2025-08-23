@@ -1,42 +1,36 @@
 import heroImg from "../assets/hero.svg";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import arrowDown from "../assets/down-arrow-1.svg";
 const Hero = () => {
   return (
-    <section className="accent py-24 sm:flex justify-around">
-      <div className="mx-auto max-w-7xl  px-8  grid  md:grid-cols-2 items-center gap-8">
+    <section className="pt-40 pb-60 my-20 sm:flex justify-around" id="home">
+      <div className="mx-auto max-w-7xl py-4 px-4 flex justify-between flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
         <article className="">
-          <h1 className="text-7xl font-bold tracking-wider">
-            I'm Oshri Agronov
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-8 tracking-tight">
+          Hi
+            <span class="inline-block hover:animate-wave cursor-default ml-4">👋</span>
+            , I'm Oshri and I'm software enthusiast.
           </h1>
-          <p className="mt-4 text-3xl text capitalize tracking-wide">
-            Software Engineer student
-          </p>
-          <p className="mt-2 text-lg text capitalize tracking-wide">
-            Software is cool I guess.
-          </p>
-          <div className="flex gap-x-4 mt-4">
-            <a href="https://github.com/oshriagronov">
-              <FaGithubSquare className="h-8 w-8 sub-text hover:text-black duration-300" />
-            </a>
-            <a href="https://www.linkedin.com/in/oshri-agronov/">
-              <FaLinkedin className="h-8 w-8 sub-text hover:text-black duration-300" />
-            </a>
-            <a href="https://x.com/oshriagronov">
-              <FaSquareXTwitter className="h-8 w-8 sub-text hover:text-black duration-300" />
-            </a>
-          </div>
+          <h2 className="text-xl sm:text-2xl text-gray-600 mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0 ">
+            I’m a passionate developer who loves turning ideas into real products.<br/>
+            I’m constantly sharpening my skills in modern programming languages, frameworks, and cutting-edge technologies.
+          </h2>
         </article>
         <article className="hidden md:block">
           <img
             src={heroImg}
             alt="two people looking at a giant phone"
-            className="h-80 lg:h-96"
+            className="w-full h-full object-cover"
           />
         </article>
+        <div className="absolute bottom-4 md:bottom-8 sm:bottom-16 left-1/2">
+          <img
+            src={arrowDown}
+            alt="arrow pointing down"
+            className="h-8 w-8"
+          />
+        </div>
       </div>
     </section>
   );
 };
-//
 export default Hero;
