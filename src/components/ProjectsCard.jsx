@@ -14,15 +14,15 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
       </div>
       <div className="flex flex-col justify-center p-3">
         {/* Stack tags */}
+        {/* Project details: title and description */}
+        <h2 className="text-2xl font-bold mb-4">{title}</h2>
+        <p className="text-lg text-gray-600 leading-relaxed mb-6">{text}</p>
+        {/* Action icons for website and GitHub links */}
         <div className="flex flex-wrap gap-2 mb-4">
         {stack?.map((item) => {
           return <span className="px-4 py-1.5 bg-gray-100 shadow-md sub-text text-sm rounded-full">{item}</span>
         })}
         </div>
-        {/* Project details: title and description */}
-        <h2 className="text-2xl font-bold mb-4">{title}</h2>
-        <p className="text-lg text-gray-600 leading-relaxed mb-6">{text}</p>
-        {/* Action icons for website and GitHub links */}
         <div className="mt-4 flex">
           <a href={url}>
             <TbWorldWww
