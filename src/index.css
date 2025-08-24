@@ -1,38 +1,70 @@
+/* 
+ * Tailwind CSS base layer: injects base styles and CSS resets.
+ */
 @tailwind base;
+
+/*
+ * Tailwind CSS components layer: for defining custom component classes using @apply.
+ */
 @tailwind components;
+
+/*
+ * Tailwind CSS utilities layer: includes all utility classes for rapid styling.
+ */
 @tailwind utilities;
+
+/*
+ * Custom Tailwind component classes for reusable UI elements.
+ */
 @layer components {
+  /* Centers content and constrains width for layout. */
   .align-element {
     @apply mx-auto max-w-7xl px-8;
   }
+  /* Applies a white background color. */
   .background {
     @apply bg-white;
   }
 
+  /* Highlights text with blue color. */
   .highlight {
     @apply text-blue-500;
   }
+  /* Makes text bold for titles. */
   .title {
     @apply font-bold;
   }
+  /* Subdued gray color for secondary text. */
   .sub-text {
     @apply text-gray-600;
   }
 
+  /* Adds highlight effect on hover with smooth transition. */
   .hover-effect{
     @apply hover:highlight duration-300
   }
+  /* Sizing for icon buttons. */
   .icon-button{
     @apply h-8 w-8
   }
 }
 
+
+/*
+ * Keyframe animation for rotating spinner (used in loading indicator).
+ */
 @keyframes spinner {
   to {
     transform: rotate(360deg);
   }
 }
 
+/*
+ * Loading spinner styling:
+ * - Circular shape with border.
+ * - Blue color on top border for spinner effect.
+ * - Applies the spinner animation for continuous rotation.
+ */
 .loading {
   width: 6rem;
   height: 6rem;
