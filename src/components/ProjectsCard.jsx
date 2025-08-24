@@ -5,11 +5,13 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
     // Project card layout with grid, shadow, and rounded corners
     <article className="grid md:grid-cols-2 gap-12 items-stretch rounded-2xl shadow-md hover:shadow-xl duration-300">
       {/* Project image */}
-      <img
-        src={imageSrc}
-        alt={title}
-        className="rounded-2xl overflow-hidden h-full flex items-center"
-      />
+      <div className= "rounded-2xl overflow-hidden h-full flex items-center">
+        <img
+          src={imageSrc}
+          alt={title}
+          className=" w-full object-cover"
+        />
+      </div>
       <div className="flex flex-col justify-center p-3">
         {/* Stack tags */}
         <div className="flex flex-wrap gap-2 mb-4">
