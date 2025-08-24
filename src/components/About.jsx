@@ -2,7 +2,7 @@ import aboutSvg from "../assets/about.svg";
 
 const About = () => {
   return (
-    <section className="py-20" id="about">
+    <section className="scroll-mt-20 py-20" id="about">
       {/* Container for aligning content vertically and centering items */}
       <div className="align-element items-center">
           {/* Section title */}

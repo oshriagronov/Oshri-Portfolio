@@ -8,7 +8,7 @@ const Projects = () => {
   if (isLoading) return <div className="loading"></div>;
   // Render the projects section with a title and a list of project cards
   return (
-    <section className="py-20 align-element" id="projects">
+    <section className="scroll-mt-20 py-20 align-element" id="projects">
       {/* Section title */}
       <h2 className="text-3xl text-center title mb-12 md:mb-16">
         Some of my recent projects <span className="hidden md:inline-block">🔭</span>
