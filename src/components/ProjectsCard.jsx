@@ -9,7 +9,7 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
         <img
           src={imageSrc}
           alt={title}
-          className=" w-full object-cover"
+          className="rounded-2xl w-full h-auto object-contain"
         />
       </div>
       <div className="flex flex-col justify-center p-3">

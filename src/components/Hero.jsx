@@ -3,8 +3,8 @@ import arrowDown from "../assets/down-arrow-1.svg";
 const Hero = () => {
   return (
     // Hero section with padding and responsive flex layout
-    <section className="pt-40 pb-60 my-20 sm:flex justify-around" id="home">
-      <div className="mx-auto max-w-7xl py-4 px-4 flex justify-between flex-col sm:flex-row sm:gap-x-16 sm:items-center sm:py-8">
+    <section className="pt-20 pb-40 sm:flex justify-around flex flex-col items-center min-h-screen" id="home">
+      <div className="mx-auto max-w-7xl py-4 px-4 flex flex-row items-center justify-between gap-x-16 sm:gap-x-16 sm:items-center sm:py-8">
         <article className="">
           {/* Main heading introducing Oshri with an emoji and highlighted name */}
           <h1 className="text-4xl title mb-8 tracking-tight sm:text-5xl md:text-7xl">
@@ -26,16 +26,16 @@ const Hero = () => {
             className="w-full h-full object-cover"
           />
         </article>
-        {/* Arrow navigation link that scrolls down to the projects section with hover animations */}
-        <div className="absolute bottom-4 md:bottom-8 sm:bottom-16 left-1/2">
-          <a href="#projects" className="flex items-center duration-300 hover:scale-130 hover:-translate-y-1">
-            <img
-              src={arrowDown}
-              alt="An arrow pointing down"
-              className="h-8 w-8"
-            />
-          </a>
-        </div>
+      </div>
+      {/* Arrow navigation link that scrolls down to the projects section with hover animations */}
+      <div className="flex justify-center">
+        <a href="#projects" className="flex items-center duration-300 hover:scale-130 hover:-translate-y-1">
+          <img
+            src={arrowDown}
+            alt="An arrow pointing down"
+            className="h-8 w-8"
+          />
+        </a>
       </div>
     </section>
   );
