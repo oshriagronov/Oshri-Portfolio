@@ -8,10 +8,10 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
         alt={title}
         className="rounded-2xl overflow-hidden h-full flex items-center"
       />
-      <div className="flex flex-col justify-center">
+      <div className="flex flex-col justify-center p-3">
         <div className="flex flex-wrap gap-2 mb-4">
         {stack?.map((item) => {
-          return <span className="px-4 py-1.5 bg-gray-100 shadow-md text-gray-600 text-sm rounded-full">{item}</span>
+          return <span className="px-4 py-1.5 bg-gray-100 shadow-md sub-text text-sm rounded-full">{item}</span>
         })}
         </div>
         <h2 className="text-2xl font-bold mb-4">{title}</h2>
@@ -21,7 +21,7 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
             <TbWorldWww
               className={
                 url
-                  ? "h-8 w-8 mr-2 sub-text hover:text-black duration-300"
+                  ? "icon-button mr-2 sub-text hover-effect"
                   : "hidden"
               }
             />
@@ -30,7 +30,7 @@ const ProjectsCard = ({ url, imageSrc, github, title, text, stack }) => {
             <FaGithub
               className={
                 github
-                  ? "h-8 w-8 mr-2 sub-text hover:text-black duration-300"
+                  ? "icon-button mr-2 sub-text hover-effect"
                   : "hidden"
               }
             />

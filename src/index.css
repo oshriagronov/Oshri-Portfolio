@@ -10,17 +10,20 @@
   }
 
   .highlight {
-    @apply text-gray-500;
+    @apply text-blue-500;
   }
-  .text {
-    @apply text-gray-700;
+  .title {
+    @apply font-bold;
   }
   .sub-text {
-    @apply text-gray-500;
+    @apply text-gray-600;
   }
 
-  .accent {
-    @apply bg-blue-300;
+  .hover-effect{
+    @apply hover:highlight duration-300
+  }
+  .icon-button{
+    @apply h-8 w-8
   }
 }
 
